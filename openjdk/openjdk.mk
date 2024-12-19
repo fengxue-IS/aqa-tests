@@ -117,7 +117,7 @@ else ifneq ($(filter linux_aarch64, $(SPEC)),)
 	JTREG_TIMEOUT_OPTION =  -timeoutFactor:12
 # Multiple by 8 the timeout numbers, except on zOS use 2
 else ifeq ($(OS),OS/390)
-	JTREG_TIMEOUT_OPTION =  -timeoutFactor:2
+	JTREG_TIMEOUT_OPTION =  -timeoutFactor:16
 else
 	JTREG_TIMEOUT_OPTION =  -timeoutFactor:8
 endif
